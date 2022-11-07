@@ -19,7 +19,7 @@
 /* Colors */
 :root {
   --color-default: #fafafa;
-  --color-primary: #27a776;
+  --color-primary: hsl(20, 84%, 37%);
   --color-secondary: #161718;
 }
 
@@ -34,7 +34,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
-  background-color: #000;
+  background-color: black;
 }
 
 a {
@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #32cf93;
+  color: hsl(20, 84%, 37%);
   text-decoration: none;
 }
 
@@ -130,11 +130,11 @@ h6 {
   text-transform: uppercase;
   transition: 0.3s;
   color: #fff;
-  background: var(--color-primary);
+  background-color: #be5910;
 }
 
 .page-header .cta-btn:hover {
-  background: #2cbc85;
+  background: hsl(20, 84%, 37%);
 }
 
 /*--------------------------------------------------------------
@@ -766,7 +766,7 @@ h6 {
 .gallery .gallery-links .preview-link,
 .gallery .gallery-links .details-link {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.5);
+  color: black;
   transition: 0.3s;
   line-height: 1.2;
   margin: 30px 8px 0 8px;
@@ -796,11 +796,11 @@ h6 {
 }
 
 .glightbox-clean .gslide-description {
-  background: #222425;
+  background: black;
 }
 
 .glightbox-clean .gslide-title {
-  color: rgba(255, 255, 255, 0.8);
+  color: black;
   margin: 0;
 }
 
@@ -814,7 +814,7 @@ h6 {
 .gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: black;
   opacity: 1;
 }
 
@@ -831,7 +831,7 @@ h6 {
 .gallery-single .swiper-button-prev:after,
 .gallery-single .swiper-button-next:after {
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: black;
   font-size: 24px;
   border-radius: 50%;
   width: 48px;
@@ -903,7 +903,7 @@ h6 {
 }
 
 .gallery-single .portfolio-info .btn-visit:hover {
-  background: #2cbc85;
+  background: #be5910;
 }
 
 .gallery-single .portfolio-description h2 {
@@ -943,13 +943,13 @@ h6 {
 
 .gallery-single .portfolio-description .testimonial-item h4 {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.6);
+  color: black;
   margin: 0;
 }
 
 .gallery-single .portfolio-description .testimonial-item .quote-icon-left,
 .gallery-single .portfolio-description .testimonial-item .quote-icon-right {
-  color: #5bd9a9;
+  color: #be5910;
   font-size: 26px;
   line-height: 0;
 }
@@ -1191,7 +1191,7 @@ h6 {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(39, 167, 118, 0.8);
+  background: hsl(20, 84%, 37%);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1268,12 +1268,12 @@ h6 {
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.3s;
-  color: #fff;
-  background: var(--color-primary);
+  color: black;
+  background-color: #be5910;
 }
 
 .hero .btn-get-started:hover {
-  background: #2cbc85;
+  background: #be5910;
 }
 
 @media (max-width: 768px) {
@@ -1306,4 +1306,45 @@ h6 {
 
 .footer .credits a {
   color: var(--color-primary);
+}
+body {background: black}
+.img__wrapper{
+  width: 500px;
+  height: 300px;
+  position:relative;
+  overflow:hidden;
+}
+.img__wrapper img{
+  width: 100%;
+}
+.sold_out {
+    top: 2em;
+    left: -4em;
+    color: #fff;
+    display: block;
+    position:absolute;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .06em;
+    background-color: #A00;
+    padding: 0.5em 5em 0.4em 5em;
+    text-shadow: 0 0 0.75em #444;
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+    font: bold 16px/1.2em Arial, Sans-Serif;
+    -webkit-text-shadow: 0 0 0.75em #444;
+    -webkit-box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+    -webkit-transform: rotate(-45deg) scale(0.75,1);
+    z-index:10;
+}
+.sold_out:before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin: -0.3em -5em;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    border: 2px rgba(255,255,255,0.7) dashed;
 }
