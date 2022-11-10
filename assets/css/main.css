@@ -60,7 +60,7 @@ h6 {
 # Sections & Section Header
 --------------------------------------------------------------*/
 .section-header {
-  padding-bottom: 40px;
+  padding-bottom: px;
 }
 
 .section-header h2 {
@@ -748,6 +748,7 @@ h6 {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  margin-left: 2em;
 }
 
 .gallery .gallery-item img {
@@ -1348,3 +1349,30 @@ body {background: black}
     -webkit-transform: scale(0.7);
     border: 2px rgba(255,255,255,0.7) dashed;
 }
+
+.videodiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -ms-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  display: block;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
+/* .video-style{
+  width: 50%;
+} */
+
+.image-bio{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
+    height: auto;
+  }
