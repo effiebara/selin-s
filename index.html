@@ -81,7 +81,7 @@
   </section><!-- End Hero Section -->
 
   <center>
-    <video width="320"  autoplay loop muted playsinline>
+    <video id="video-tag" width="320"  autoplay loop muted playsinline>
       <source src="./selin's images/eleni.mp4" type="video/mp4">
       Your browser does not support HTML video.
     </video>
@@ -103,6 +103,19 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    function BrowserDetection() {
+
+    //Check if browser is Safari, if it is, hide the <video> tag, otherwise hide the <img> tag
+    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+        document.getElementById('video-tag').style.display= "none";
+    } else {
+        document.getElementById('img-tag').style.display= "none";
+    }               
+
+    //And run the script. Note that the script tag needs to be run after HTML so where you place it is important. 
+    BrowserDetection();
+</script>
 
 </body>
 
