@@ -81,12 +81,8 @@
   </section><!-- End Hero Section -->
 
   <center>
-    <video id="video-tag" width="320" allow="autoplay" loop muted playsinline>
-      <source src="./selin's images/eleni.mp4" type="video/mp4">
-      Your browser does not support HTML video.
-    </video>
+    <iframe width="320" height="180" src="https://www.youtube.com/embed/mOGD6jeayYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </center>
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader">
     <div class="line"></div>
@@ -111,6 +107,7 @@
                  
                  if(userAgent.match(/chrome|chromium|crios/i)){
                      browserName = "chrome";
+                     document.querySelector("#chrome").classList.add('make-visible')
                    }else if(userAgent.match(/firefox|fxios/i)){
                      browserName = "firefox";
                    }  else if(userAgent.match(/safari/i)){

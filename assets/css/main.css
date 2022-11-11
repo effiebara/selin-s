@@ -1376,3 +1376,7 @@ body {background: black}
     width: 360px;
     height: auto;
   }
+
+  .make-visible{
+    display: block !important;
+  }
